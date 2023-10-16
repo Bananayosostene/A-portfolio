@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+.navbar{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 5px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    border: 2px red solid;
+}
+.navbar a{
+    color: white;
+}
+.div1 {
+    width: 100%;
+    height: 35rem;
+    background: rgb(255, 115, 0);
+}
+.div2 {
+    width: 100%;
+    height: 35rem;
+    background: rgb(255, 0, 200);
+}
+
+.div3 {
+    width: 100%;
+    height: 35rem;
+    background: rgb(51, 0, 255);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+#menu{
+    display: none;
+}
+
+#theme{
+    font-size: 2rem;
+    height: 5rem;
+    background: blue;
+    color:#fff;
+    border-radius: 5rem;
+    width:5rem;
+    text-align: center;
+    line-height: 5rem;
+    position: fixed;
+    top:8.5rem; right:2rem;
+    z-index: 998;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px) { 
+    #menu{
+        display: block;
+        font-size: 2rem;
+        background: red;
+        color:#fff;
+        border-radius: 5rem;
+        height:5rem;
+        width:5rem;
+        text-align: center;
+        line-height: 5rem;
+        position: fixed;
+        top: 2rem; right:2rem;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    padding:1rem;
+    padding-right: 7rem;
+    color: black;
+}
+
+.navbar a:hover{
+    color: orange;
+    transform: translateX(1rem);
+}
+#menu.fa-times{
+    transform:rotate(-180deg);
+}
+.navbar{
+    display: block;
+    position: fixed;
+    top:2.4rem; right:2.5rem;
+    padding:1.1rem 2rem;
+    padding-right: 4rem;
+    z-index: 999;
+    border:.2rem solid black;
+    border-radius: 1rem;
+    background: gray;
+    opacity: 0;
+    transform-origin: top right;
+    transform: scale(0);
+    width: 40%;
+}
+
+.navbar.nav-toggle{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.navbar a{
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    padding:1rem;
+    padding-right: 7rem;
+    color: black;
+}
+
+.navbar a:hover{
+    color: orange;
+    transform: translateX(1rem);
+}
+}
+
+
+
+
+
